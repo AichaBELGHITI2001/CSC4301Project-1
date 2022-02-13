@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime;
 using UnityEditor;
-//using MonoBehaviour;
 
 public class Pathfinding : MonoBehaviour {
 	public Transform seeker, target;
