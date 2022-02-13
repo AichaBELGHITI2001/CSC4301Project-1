@@ -77,7 +77,7 @@ In this case, I tested the pathfinding algorithms on the same maze that I starte
 
 Figure 8:  Maze 1 and paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), and UCS(white)
 
-	In this case, we did not include DFS since it explores a big number of notes and creates a path that covers other paths. The figure shows that A* Manhattan was quicker than A* Euclidian by 0.6 milliseconds. While the  A* Euclidian created the shortest path since A* Manhattan path has 47 nodes and  A* Euclidian path has 42 nodes. UCS and DFS also outputted a path with 42 nodes, but they were slower than A* Euclidian by 1.93 milliseconds and 0.711 milliseconds respectively. We can also see that the path formed by BFS(yellow) is covered by the path formed by the A* Euclidian(pink) algorithm.			
+In this case, we did not include DFS since it explores a big number of notes and creates a path that covers other paths. The figure shows that A* Manhattan was quicker than A* Euclidian by 0.6 milliseconds. While the  A* Euclidian created the shortest path since A* Manhattan path has 47 nodes and  A* Euclidian path has 42 nodes. UCS and DFS also outputted a path with 42 nodes, but they were slower than A* Euclidian by 1.93 milliseconds and 0.711 milliseconds respectively. We can also see that the path formed by BFS(yellow) is covered by the path formed by the A* Euclidian(pink) algorithm.			
 
 7- Scenario 7: 
 
