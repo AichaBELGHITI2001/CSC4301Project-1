@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime;
 using UnityEditor;
-//using MonoBehaviour;
 
 public class Pathfinding : MonoBehaviour {
 	public Transform seeker, target;
@@ -198,7 +197,7 @@ public class Pathfinding : MonoBehaviour {
 					//Store a reference to the previous node
                     neighbour.parent = currentNode;
 
-					//Add this to the queue of nodes to examine
+					//Add this to the stack of nodes to examine
 					stack.Push(neighbour);
 				}
 		    }
@@ -246,14 +245,7 @@ public class Pathfinding : MonoBehaviour {
 	void RetracePath(Node startNode, Node endNode,int ID) {
 		List<Node> path = new List<Node>();
 		Node currentNode = endNode;
-		if(ID==1){
-			while (currentNode != startNode) {
-			path.Add(currentNode);
-			currentNode = currentNode.parent;
-			}
-			path.Reverse();
-			grid.pathAstar = path;
-		}else if(ID==2){
+		 if(ID==2){
 			while (currentNode != startNode) {
 			path.Add(currentNode);
 			currentNode = currentNode.parent;
