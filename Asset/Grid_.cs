@@ -63,7 +63,7 @@ public class Grid_ : MonoBehaviour {
 		return grid[x,y];
 	}
 
-	public List<Node> pathAstar;
+	
 	public List<Node> pathUCS;
 	public List<Node> pathDFS;
 	public List<Node> pathBFS;
@@ -83,14 +83,7 @@ public class Grid_ : MonoBehaviour {
 
 		if (grid != null) {
 			foreach (Node n in grid) {
-				if (pathAstar != null){
-					foreach (Node n9 in pathAstar){
-						if (pathAstar.Contains(n9)){
-							Gizmos.color = Color.red;
-							Gizmos.DrawCube(n9.worldPosition, Vector3.one * (nodeDiameter-.1f));
-						}
-					}
-				}if(pathUCS!=null){
+				if(pathUCS!=null){
 					foreach (Node n1 in pathUCS) {
 						if (pathUCS.Contains(n1)){
 							Gizmos.color = Color.white;
