@@ -21,6 +21,7 @@ In this scenario, we can conclude that all the pathfinding strategies are comple
 
 Figure 2:  Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), UCS(white) drawn on Maze 1
 
+
 In this scenario, I expected DFS to be the slowest, however, it was quicker than UCS and BFS by 1.82 milliseconds and 0.54 milliseconds respectively. We can say that DFS was faster than UCS because it just explores nodes without doing any calculation. Also, DFS outputted the longest path among the paths outputted by other algorithms. 
 I expected A* Manhattan to be quicker than A* Euclidian. Indeed,  A* Manhattan was quicker than A* Euclidian by 0.302 milliseconds. However, the path created by A* Euclidian (37 nodes) was shorter than the path of  A* Manhattan (41 nodes).
 In addition to that, I expected DFS to be slower than A* Euclidian. However, DFS was quicker than A* Euclidian by 0.014 milliseconds.
@@ -35,6 +36,7 @@ We can conclude that A* Manhattan was the fastest algorithm to reach the goal (r
 
 Figure 3: Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), UCS(white) drawn on Maze 2
 
+
 In this case, I modified the maze in order to test and study the behaviors of the path finding algorithm. I expected A* Manhattan to outperform A* Euclidian. Indeed, A* Manhattan  was quicker than  A* Euclidian by 0.4345 milliseconds. However, the path produced by A* Euclidian( 54 nodes) was shorter than the path of A* Manhattan(60 node). Since UCS try to find the path with the least cost, I expected it to produce a path shorter than the one produced by BFS. However, the path created by UCS and BFS has the same number of nodes(54 nodes).
 
 We can conclude that A* Manhattan is the pathfinding algorithm that reaches the target node(red dot) faster than any other algorithm (0.884 milliseconds), and UCS is the last one to get to it (2.67 milliseconds).
@@ -44,6 +46,7 @@ We can conclude that A* Manhattan is the pathfinding algorithm that reaches the 
 
 Figure 5: Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), UCS(white) drawn on Maze 2
 
+
 As we can see in the image above, the path for A* Manhattan and A* Euclidian are similar in some stages. However, A* Manhattan is quicker than A* Euclidian by 0.4345 milliseconds.
 
 4.Scenario 4:
@@ -51,6 +54,7 @@ As we can see in the image above, the path for A* Manhattan and A* Euclidian are
  ![image](https://user-images.githubusercontent.com/96016773/153768420-c4f07dab-d345-4033-b6cb-5dbd598fea0a.png)
  
 Figure 5: Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), UCS(white) drawn on Maze 2
+
      
 In this case, I expected DFS to be slower since it takes each node of the grid and checks if it is the target node. Indeed, DFS was slower than UCS and BFS by 8.7 milliseconds and 9 milliseconds respectively. Also, BFS is quicker than UCS by 0.278 milliseconds, yet they outputted a path of the same number of nodes(48 nodes).
 I expected the fact that A* Manhattan will be the quickest and will produce the shortest path. Indeed, A* Manhattan  was quicker. It was faster than A* Euclidien by 0.29 milliseconds.In addition to that, A* Manhattan outputted the shortest path since it uses the Manhattan heuristic, while DFS and BFS tried to check all nodes on the grid until they reach the target node without considering the cost of the path. 
@@ -59,6 +63,7 @@ I expected the fact that A* Manhattan will be the quickest and will produce the 
 
 Figure 6:   Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), UCS(white) drawn on Maze 2
 
+
 The screenshot above shows the paths formed by BFS, A* with Manhattan heuristic, A* with Euclidian heuristics, and UCS. We can see that  BFS and A* Euclidian paths are on top on each other meaning they outputted the same path. Also, A* Manhattan(green) and A* Euclidian(pink) intersect in several places.
 
 5- Scenario 5:
@@ -66,6 +71,7 @@ The screenshot above shows the paths formed by BFS, A* with Manhattan heuristic,
 ![image](https://user-images.githubusercontent.com/96016773/153768436-50a048bb-20d3-4c53-b115-fc5913d1acdb.png)
 
 Figure 7:  Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), UCS(white) drawn on Maze 1
+
       
 In this case, I tested the pathfinding algorithms on the same maze that I started with in this report. I did not include DFS since it explores a big number of notes and creates a path that covers other paths. The screenshot above represents separate paths formed by BFS, A* with Manhattan heuristic, A* with Euclidian heuristics, and UCS. Once again, A* Manhattan is the fasters algorithm since it reaches the target node in 0.3227 milliseconds. However, the path produced by A* with Euclidian (42 nodes) is shorter than the path produced by  A* Manhattan (46 nodes).
 
@@ -77,6 +83,7 @@ In this case, I tested the pathfinding algorithms on the same maze that I starte
 
 Figure 8:  Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), UCS(white) drawn on Maze 1
 
+
 In this case, we did not include DFS since it explores a big number of notes and creates a path that covers other paths. The figure shows that A* Manhattan was quicker than A* Euclidian by 0.6 milliseconds. While the  A* Euclidian created the shortest path since A* Manhattan path has 47 nodes and  A* Euclidian path has 42 nodes. UCS and DFS also outputted a path with 42 nodes, but they were slower than A* Euclidian by 1.93 milliseconds and 0.711 milliseconds respectively. We can also see that the path formed by BFS(yellow) is covered by the path formed by the A* Euclidian(pink) algorithm.			
 
 7- Scenario 7: 
@@ -86,7 +93,7 @@ In this case, we did not include DFS since it explores a big number of notes and
 Figure 8: Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), UCS(white) drawn on Maze 1
 
 
-In this case, I did not include DFS since it explores a big number of notes and creates a path that covers other paths. I expected A* Euclidian to be the faster. However, A* Manhattan was around 0.37 milliseconds quicker. Both A* Euclidian and A* Manhattan formed a path with the same number of nodes 46.Also, I expected UCS to be quicker than BFS and to output the path with the least number of nodes compared to BFS. However, BFS outputted a path with 43 nodes and was quicker than UCS by 1.257 milliseconds. Also, we can remark that the path of UCS(white), A* Manhattan(green), and A* Euclidian(pink) intersect at some points.
+In this case, I did not include DFS since it explores a big number of notes and creates a path that covers other paths. I expected A* Euclidian to be the faster. However, A* Manhattan was around 0.37 milliseconds quicker. Both A* Euclidian and A* Manhattan formed a path with the same number of nodes 46. Also, I expected UCS to be quicker than BFS and to output the path with the least number of nodes compared to BFS. However, BFS outputted a path with 43 nodes and was quicker than UCS by 1.257 milliseconds. Also, we can remark that the path of UCS(white), A* Manhattan(green), and A* Euclidian(pink) intersect at some points.
 
 
 III-	Conclusion: 
