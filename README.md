@@ -23,6 +23,7 @@ Figure 2: Paths formed by BFS(yellow), A* Manhattan(green), A* Euclidian(pink), 
 
 In this scenario, I expected DFS to be the slowest, however, it was quicker than UCS and BFS by 1.82 milliseconds and 0.54 milliseconds. We can say that DFS was faster than UCS because it just explores nodes without doing any calculation. Also, DFS outputted the longest path among the paths outputted by other algorithms. 
 I expected A* Manhattan to be quicker than A* Euclidian. Indeed,  A* Manhattan was quicker than A* Euclidian by 0.302 milliseconds. However, the path created by A* Euclidian (37 nodes) was shorter than the path of  A* Manhattan (41 nodes).
+In addition to that, I expected DFS to be slower than A* Euclidian. However, DFS was quicker than A* Euclidian by 0.014 milliseconds.
 
 We can conclude that A* Manhattan was the fastest algorithm to reach the goal (red dot) since it reached it in 0.46 milliseconds. Also, we can conclude that A* Euclidian outputted the shortest path (37 nodes) in the least amount of time compared to UCS and BFS.
 
