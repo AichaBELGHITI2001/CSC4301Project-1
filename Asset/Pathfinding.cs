@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime;
 using UnityEditor;
+//using MonoBehaviour;
 
 public class Pathfinding : MonoBehaviour {
 	public Transform seeker, target;
@@ -22,8 +23,6 @@ public class Pathfinding : MonoBehaviour {
 		visitedNodesUCS=0;
 		visitedNodesBFS=0;
 		visitedNodesDFS=0;
-		
-		
 
 		FindPathAstartEucliedien(seeker.position,target.position);
 		FindPathAstartManhattan (seeker.position,target.position);
@@ -34,7 +33,7 @@ public class Pathfinding : MonoBehaviour {
 	print(" Nodes visited in UCS: "+ visitedNodesUCS + "\n"+ " Nodes visited in BFS: " + visitedNodesBFS+"\n");	
 	print(" Nodes visited in DFS: " + visitedNodesDFS+"\n");
 	
-		
+	}	
 	
 	void FindPathAstartManhattan(Vector3 startPos, Vector3 targetPos) {
 		Node startNode = grid.NodeFromWorldPoint(startPos);
@@ -167,7 +166,7 @@ public class Pathfinding : MonoBehaviour {
 			}
 		}
 	}
-}
+
     void FindPathDFS(Vector3 startPos, Vector3 targetPos) {
 		Node startNode = grid.NodeFromWorldPoint(startPos);
 		Node targetNode = grid.NodeFromWorldPoint(targetPos);
